@@ -41,8 +41,8 @@ class Filing extends Base
      * Parameters of the datatype
      * @var array
      */
-    protected $params = [
-        'FilingType' => [
+    protected $params = array(
+        'FilingType' => array(
             'type' => 'FilingType',
             'required' => false,
             'subobject' => false,
@@ -50,8 +50,8 @@ class Filing extends Base
             'minLength' => '3',
             'maxLength' => '4',
             'enumeration' => 'FTR,ITN,AES4',
-        ],
-        'FTSR' => [
+        ),
+        'FTSR' => array(
             'type' => 'FTSR',
             'required' => false,
             'subobject' => false,
@@ -60,22 +60,22 @@ class Filing extends Base
             'maxLength' => '10',
             'enumeration' => '30.2(d)(2),30.36,30.37(a),30.37(b),30.37(e),30.37(f),30.37(g),30.37(h),30.37(j),30.37(k),'
                 . '30.39,30.40(a),30.40(b),30.40(c),30.40(d)',
-        ],
-        'ITN' => [
+        ),
+        'ITN' => array(
             'type' => 'ITN',
             'required' => false,
             'subobject' => false,
             'comment' => 'ITN',
             'length' => '15',
             'pattern' => 'X[0-9]{14}',
-        ],
-        'AES4EIN' => [
+        ),
+        'AES4EIN' => array(
             'type' => 'AES4EIN',
             'required' => false,
             'subobject' => false,
             'comment' => 'AES4',
             'minLength' => '1',
             'maxLength' => '11',
-        ],
-    ];
+        ),
+    );
 }
