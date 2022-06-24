@@ -102,8 +102,8 @@ abstract class Base extends BaseDataType
     /**
      * Class constants
      */
-    public const DHL_REQ = 'http://www.dhl.com';
-    public const DHL_XSI = 'http://www.w3.org/2001/XMLSchema-instance';
+    const DHL_REQ = 'http://www.dhl.com';
+    const DHL_XSI = 'http://www.w3.org/2001/XMLSchema-instance';
 
     /**
      * Class constructor
