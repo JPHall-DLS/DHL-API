@@ -274,7 +274,7 @@ abstract class Base extends BaseDataType
      *
      * @return void
      */
-    protected function initializeValues(): void
+    protected function initializeValues()
     {
         foreach ($this->params as $name => $infos) {
             if (!$this->is_sub_object && isset($infos['subobject']) && $infos['subobject']) {
@@ -303,7 +303,7 @@ abstract class Base extends BaseDataType
      * @return boolean True upon success
      * @throws InvalidArgumentException Throws exception if type not valid or if value are missing
      */
-    protected function validateParameters(): bool
+    protected function validateParameters()
     {
         foreach ($this->params as $name => $infos) {
             if (isset($infos['required']) && true === $infos['required'] && $this->values[$name] === null) {
